@@ -46,6 +46,17 @@
   margin: 0 auto;
 }
 
+.desc-edit {
+  text-align: center;
+  margin: 5px 100px;
+  display: flex;
+  flex-direction: column;
+}
+
 h3 {
   margin: 5px 0;
+}
+
+button {
+  cursor: pointer;
 }

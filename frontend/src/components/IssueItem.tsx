@@ -32,7 +32,7 @@ const IssueItem: React.FC<IssueItemProps> = ({ issue, onIssueDeleted, onIssueUpd
       {isExpanded && (
         <div className="issue-details">
           {isEditing ? (
-            <>
+            <div className='desc-edit'>
               <input
                 type="text"
                 value={title}
@@ -43,7 +43,7 @@ const IssueItem: React.FC<IssueItemProps> = ({ issue, onIssueDeleted, onIssueUpd
                 onChange={(e) => setDescription(e.target.value)}
               ></textarea>
               <button onClick={handleUpdate}>Save</button>
-            </>
+            </div>
           ) : (
             <div className='desc'>
               <p>{issue.description}</p>
