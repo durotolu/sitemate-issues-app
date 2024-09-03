@@ -15,18 +15,16 @@ const IssueList: React.FC = () => {
     setIssues(data);
   };
 
-  const handleIssueCreated = (issue: Issue) => {
-    setIssues([...issues, issue]);
+  const handleIssueCreated = () => {
+    fetchIssues()
   };
 
-  const handleIssueDeleted = (id: number) => {
-    setIssues(issues.filter((issue) => issue.id !== id));
+  const handleIssueDeleted = () => {
+    fetchIssues()
   };
 
-  const handleIssueUpdated = (updatedIssue: Issue) => {
-    setIssues(
-      issues.map((issue) => (issue.id === updatedIssue.id ? updatedIssue : issue))
-    );
+  const handleIssueUpdated = () => {
+    fetchIssues()
   };
 
   return (
