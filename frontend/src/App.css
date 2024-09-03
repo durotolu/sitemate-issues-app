@@ -3,7 +3,7 @@
   padding: 20px;
 }
 
-.issue-form, .issue-item {
+.issue-form, .issue-list {
   border: 1px solid #ccc;
   padding: 15px;
   margin: 10px auto;
@@ -11,9 +11,17 @@
   border-radius: 5px;
 }
 
+.issue-item {
+  border: 2px solid #ccc;
+  /* padding: 15px; */
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 5px;
+}
+
 .issue-form input, .issue-form textarea {
   width: 100%;
-  padding: 8px;
+  padding: 8px 0;
   margin: 5px 0;
 }
 
@@ -31,4 +39,13 @@
 
 .issue-details button {
   margin-right: 10px;
+}
+
+.desc {
+  text-align: center;
+  margin: 0 auto;
+}
+
+h3 {
+  margin: 5px 0;
 }

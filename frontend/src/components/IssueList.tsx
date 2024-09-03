@@ -32,14 +32,16 @@ const IssueList: React.FC = () => {
   return (
     <div className="issue-list">
       <h2>Issues</h2>
-      {issues.map((issue) => (
-        <IssueItem
-          key={issue.id}
-          issue={issue}
-          onIssueDeleted={handleIssueDeleted}
-          onIssueUpdated={handleIssueUpdated}
-        />
-      ))}
+      <div className="issue-list-lists">
+        {issues.map((issue) => (
+          <IssueItem
+            key={issue.id}
+            issue={issue}
+            onIssueDeleted={handleIssueDeleted}
+            onIssueUpdated={handleIssueUpdated}
+          />
+        ))}
+      </div>
       <IssueForm onIssueCreated={handleIssueCreated} />
     </div>
   );

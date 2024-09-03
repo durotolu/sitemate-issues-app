@@ -45,11 +45,11 @@ const IssueItem: React.FC<IssueItemProps> = ({ issue, onIssueDeleted, onIssueUpd
               <button onClick={handleUpdate}>Save</button>
             </>
           ) : (
-            <>
+            <div className='desc'>
               <p>{issue.description}</p>
               <button onClick={() => setIsEditing(true)}>Edit</button>
               <button onClick={handleDelete}>Delete</button>
-            </>
+            </div>
           )}
         </div>
       )}
