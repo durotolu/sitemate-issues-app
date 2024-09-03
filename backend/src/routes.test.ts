@@ -1,4 +1,3 @@
-// src/routes.test.ts
 import request from 'supertest';
 import express from 'express';
 import routes from './routes';
